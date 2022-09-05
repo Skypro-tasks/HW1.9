@@ -10,9 +10,12 @@ public class Main {
 
         secondBook.setPublishingYear(2008);
 
-        System.out.println(firstBook.toString());
+        System.out.println(firstBook);
 
         System.out.println(firstBook.equals(secondBook));
         System.out.println(secondBook.equals(thirdBook));
+
+        System.out.println(firstBook.hashCode() == secondBook.hashCode());
+        System.out.println(secondBook.hashCode() == thirdBook.hashCode());
     }
 }
